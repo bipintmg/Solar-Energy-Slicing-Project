@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page-container{
+  padding: 0px 64px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .page-container{
+    padding: 0 32px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page-container{
+      padding: 0px 16px;
+      margin: 0 auto;
+  }
+}
+h1,
+h2,
+h3 {
+  font-family: "K2D";
+  color: #381606;
+  letter-spacing: -0.1rem;
+}
+h1 {
+  font-size: 96px;
+  line-height: 104px;
+}
+h2 {
+  font-size: 72px;
+  line-height: 80px;
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+body {
+  position: relative;
+  font-family: "Georama";
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(56, 22, 6, 0.70);
+  margin: 0px;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  box-sizing: border-box;
+  border: 0px;
+  border-radius: 32px;
+  background-color: #ff4d4d;
+  border: 2px solid #ff4d4d;
+  transition: 100ms ease-in-out;
+  font-family: "Georama";
+  text-wrap: nowrap;
+  .arrow {
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: 8px;
+  }
+  svg {
+    transition: 100ms ease-in-out;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ff4d4d;
+    svg {
+      path {
+        stroke: #ff4d4d;
+        fill: #ff4d4d;
+      }
+    }
+  }
+  &:active {
+    cursor: pointer;
+    background-color: #ffd3d3;
+    stroke: #ff4d4d;
+    fill: #ff4d4d;
+  }
+}
+.btn-rect {
+  height: 40px;
+  width: 100%;
+  padding: 8px 16px;
+  font-weight: 700;
+}
+.btn-circle {
+  box-sizing: content-box;
+  border: 2px solid #ff4d4d;
+  border-radius: 100%;
+  font-size: 40px;f
+  font-weight: 300;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0px;
+  transition: 100ms ease-in-out;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+}
+p {
+  color: rgba(56, 22, 6, 0.72);
+  margin: 0px;
+  line-height: 32px;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width:991px){
+  h2{
+      font-size: 50px;
+      line-height: 48px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width:767px){
+  h2{
+    font-size: 36px;
+    line-height: 40px;
+  }
+  h3{
+      font-size: 22px;
+      line-height: 32px;
+  }
+  p{
+      font-size: 16px;
+      line-height: 22px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  h3 {
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+  }
+  p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+  }
+}
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.1rem;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.05em;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  li,
+  button,
+  input {
+    font-size: 16px;
+    font-family: Georama;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  input {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Georama;
+    letter-spacing: 0.02rem;
+  }
+}
+
+/* :hover {
+  cursor: url("../images/cursor.svg"), auto;
+} */
