@@ -717,9 +717,13 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
   text-align: center;
   position: relative;
 }
-.solar-energy-wrapper .container-boxes .box .num-wrapper svg{
+.solar-energy-wrapper .container-boxes .box .num-wrapper .icon-wrap{
   text-align: center;
   margin: 30px auto 0;
+}
+.solar-energy-wrapper .container-boxes .box .num-wrapper .icon-wrap img{
+  width: 100%;
+  display: block;
 }
 .solar-energy-wrapper .container-boxes .box .num{
   font-family: "Inter";
@@ -814,7 +818,7 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
   .solar-energy-wrapper .container-boxes .box .num-wrapper .num{
     font-size: 48px;
   }
-  .solar-energy-wrapper .container-boxes .box .num-wrapper svg{
+  .solar-energy-wrapper .container-boxes .box .num-wrapper .icon-wrap{
     width: 30%;
   }
 }
@@ -856,7 +860,7 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
     border-radius: 32px;
     padding: 32px;
   }
-  .solar-energy-wrapper .container-boxes .box .num-wrapper svg{
+  .solar-energy-wrapper .container-boxes .box .num-wrapper .icon-wrap{
     margin: 0 auto;
   }
 }
@@ -894,7 +898,7 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
 .benefit-wrapper .grid-content h3{
   margin-bottom: 8px;
 }
-.benefit-wrapper  .grid-icons{
+.benefit-wrapper .grid-icons{
   text-align: center;
 }
 .benefit-wrapper .grid-item:hover{
@@ -1959,7 +1963,7 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
       margin-bottom: 8px;
   }
 }
-.simplified-wrapper  .grid-icons{
+.simplified-wrapper .grid-icons{
   text-align: center;
 }
 .simplified-wrapper .grid-item:hover{
