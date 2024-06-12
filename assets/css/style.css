@@ -469,8 +469,8 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
     font-weight: 500;
     line-height: 24px;
   }
-  .footer__navbar-wrapper .navbar__logo-wrapper svg,
-  .header__navbar-wrapper .navbar__logo-wrapper svg {
+  .footer__navbar-wrapper .navbar__logo-wrapper img,
+  .header__navbar-wrapper .navbar__logo-wrapper img {
     width: 68px;
     height: 24px;
   }
