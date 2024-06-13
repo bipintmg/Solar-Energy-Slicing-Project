@@ -13,18 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
   for (let list of defLists) {
     i += 1;
     defListID = list.getAttribute("id");
-    console.log(defListID);
     expand_collapse(defListID, true);
     defListIDs.push(defListID);
     if (i == defLiCount) break;
   }
-  console.log(defListIDs);
-  console.log("def");
 });
 
 function expand_collapse(liID, isDef) {
   if (isDef) {
-    console.log(liID);
     DefBtnID = document
       .getElementById(liID)
       .firstElementChild.lastElementChild.getAttribute("id");
@@ -47,23 +43,17 @@ function expand_collapse(liID, isDef) {
 
     // Collapse logic
     if (prevBtnID != null && prevBtnID != btnID) {
-      console.log(`collapsed: ${prevBtnID} \nexpanded: ${btnID}`);
       expand(btnID);
       collapse(prevBtnID);
       prevBtnID = btnID;
-      // console.log(`After:-  collapsed: ${prevBtnID} and expanded: ${btnID}`);
     } else if (prevBtnID != null && prevBtnID == btnID) {
       collapse(btnID);
-      console.log(`collapsed: ${prevBtnID}`);
       prevBtnID = null;
-      // console.log(`prevBtnID: ${prevBtnID} & btnID: ${btnID}`);
     }
     // Expand logic
     else {
       expand(btnID);
-      console.log(`expanded: ${btnID}`);
       prevBtnID = btnID;
-      // console.log(`prevBtnID: ${prevBtnID} & btnID: ${btnID}`);
     }
   }
 }
