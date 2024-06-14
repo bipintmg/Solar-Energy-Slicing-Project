@@ -354,6 +354,9 @@ header .header__burger-menu-wrapper {
   line-height: 32px;
   height: fit-content;
 }
+.faq-wrapper .faq__list li .list__qn.active svg path.vertical-path{
+  display: none;
+}
 .faq-wrapper .faq__list li .list__qn p {
   font-family: "K2D";
   color: #381606;
@@ -363,8 +366,12 @@ header .header__burger-menu-wrapper {
   line-height: 32px;
 }
 .faq-wrapper .faq__list li .list__ans {
+  display: none;
   line-height: 24px;
   padding-top: 16px;
+}
+.faq-wrapper .faq__list li .list__ans.show{
+  display: block;
 }
 /*--------Footer------*/
 footer {
