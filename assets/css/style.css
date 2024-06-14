@@ -354,8 +354,11 @@ header .header__burger-menu-wrapper {
   line-height: 32px;
   height: fit-content;
 }
-.faq-wrapper .faq__list li .list__qn.active svg path.vertical-path{
+.faq-wrapper .faq__list li .list__qn svg path.vertical-path{
   display: none;
+}
+.faq-wrapper .faq__list li .list__qn.close svg path.vertical-path{
+  display: block;
 }
 .faq-wrapper .faq__list li .list__qn p {
   font-family: "K2D";
@@ -366,7 +369,6 @@ header .header__burger-menu-wrapper {
   line-height: 32px;
 }
 .faq-wrapper .faq__list li .list__ans {
-  display: none;
   line-height: 24px;
   padding-top: 16px;
 }

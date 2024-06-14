@@ -1,23 +1,21 @@
-// // Script for Single expandable accordion
-document.addEventListener("DOMContentLoaded", function() {
-  var acc = document.getElementsByClassName("list__qn");
-  var panels = document.getElementsByClassName("list__ans");
+//Script for Single expandable accordion
+document.addEventListener('DOMContentLoaded', function() {
+  var headers = document.querySelectorAll('.list__qn');
 
-  // Activate the first three accordions
-  for (var i = 0; i < 3; i++) {
-      acc[i].classList.add("active");
-      panels[i].classList.add("show");
-  }
-
-  // Add click event listener to all accordions
-  for (var i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          panel.classList.toggle("show");
+  headers.forEach(function(header) {
+      header.addEventListener('click', function() {
+          var content = this.nextElementSibling;
+          if (content.style.display === 'none') {
+              content.style.display = 'block';
+              this.classList.remove("close");
+          } else {
+              content.style.display = 'none';
+              this.classList.add("close");
+          }
       });
-  }
+  });
 });
+
 
 //menu
 let burger_toggle = 0;
