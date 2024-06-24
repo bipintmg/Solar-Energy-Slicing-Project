@@ -1,18 +1,18 @@
 //Script for Single expandable accordion
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var headers = document.querySelectorAll('.list__qn');
 
-  headers.forEach(function(header) {
-      header.addEventListener('click', function() {
-          var content = this.nextElementSibling;
-          if (content.style.display === 'none') {
-              content.style.display = 'block';
-              this.classList.remove("close");
-          } else {
-              content.style.display = 'none';
-              this.classList.add("close");
-          }
-      });
+  headers.forEach(function (header) {
+    header.addEventListener('click', function () {
+      var content = this.nextElementSibling;
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        this.classList.remove("close");
+      } else {
+        content.style.display = 'none';
+        this.classList.add("close");
+      }
+    });
   });
 });
 

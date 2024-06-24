@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="assets/images/title_logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script
       src="https://cdn.jsdelivr.net/npm/less"
       type="text/javascript"
       ></script> -->
-      <script src="assets/js/script.js"></script>
-      <title>Solar Energy Host</title>
-    </head>
+  <script src="assets/js/script.js"></script>
+  <title>Solar Energy Host</title>
+</head>
 
-    <body>
-      <header>
-        <div class="page-container">
-          <div class="header__navbar-wrapper">
-            <div class="navbar__logo-wrapper">
-              <a href="index.html" class="logo-white">
-                <img src="assets/images/logo-white.png" alt="Logo White"/>
-               </a>
-              <a href="index.html" class="logo-black">
-                <img src="assets/images/logo-dark.png" alt="Logo Dark"/>
-              </a>
-            </div>
-            <div class="navbar__menu-wrapper">
-              <ul class="navbar__menu">
-                <li><a href="">Home Solar Batteries</a></li>
-                <li><a href="">Solar Panel Installation</a></li>
-                <li><a href="">How it works</a></li>
-                <li><a href="">Solar Guide</a></li>
-                <li><a href="">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar__button-wrapper">
-              <button class="btn-rect">
-                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="burger-wrapper" onclick="burger()">
-            <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
-            </svg>
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
-              <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)" fill="#381606"></rect>
-              <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)" fill="#381606"></rect>
-            </svg>
-          </div>
-          <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
+<body>
+  <header>
+    <div class="page-container">
+      <div class="header__navbar-wrapper">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo-white">
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
+          <a href="index.html" class="logo-black">
+            <img src="assets/images/logo-dark.png" alt="Logo Dark" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar__button-wrapper">
+          <button class="btn-rect">
+            Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="burger-wrapper" onclick="burger()">
+          <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
+            <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)"
+              fill="#381606"></rect>
+            <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)"
+              fill="#381606"></rect>
+          </svg>
+        </div>
+        <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
         
           </div> -->
-        </div>
-        <div class="header__burger-menu-wrapper" id="burger-menu">
-          <div class="burger__menu-wrapper">
-            <ul class="burger__menu">
-              <li><a href="">Home Solar Batteries</a></li>
-              <li><a href="">Solar Panel Installation</a></li>
-              <li><a href="">How it works</a></li>
-              <li><a href="">Solar Guide</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li>
-                <button class="btn-rect burger__btn-rect">
-                  Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+      </div>
+      <div class="header__burger-menu-wrapper" id="burger-menu">
+        <div class="burger__menu-wrapper">
+          <ul class="burger__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <button class="btn-rect burger__btn-rect">
+                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                      fill="white"></path>
                   </svg>
                 </span>
               </button>
@@ -94,327 +110,384 @@
     <div class="page-container">
       <div class="banner__banner-info austin">
         <h1 class="banner-info__title">
-          Austin solar panel <br/>installation</h1>
-      <p class="banner-info__subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-    <form action="/form.html" method="get">
-      <div class="zipcode-wrap">
-        <input type="text" name="zip" placeholder="Enter Zip code" id="">
-        <button type="submit" class="btn-rect">
-          Free Cost Estimate<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-</form>
-</div>
-</section>
-
-<section class="austin-content-wrapper">
-  <div class="page-container">
-      <h2>Austin solar panel installation</h2>
-      <div class="content--text-today content-hover">
-          <p>In today’s rapidly advancing world, where the shift towards renewable energy sources is more crucial than ever, solar energy offers more benefits beyond environmental preservation. It’s ideal for homeowners who want to reduce their carbon footprint while potentially saving on energy costs. </p>
-          <p>However, the journey to harnessing the sun’s energy can be challenging and overwhelming, especially with the many providers crowding the market. This is where <span class="text--solar">Solar Energy Host can provide some much-needed guidance</span>; we simplify the process of comparing different options online.</p>
-          <blockquote>
-              <p>
-                  Our mission is rooted in empowerment, offering a platform that facilitates connections with premier providers in your area so that you and other homeowners can easily receive competitive quotes and compare different offers. This approach saves valuable time, reduces hassle, and guarantees that each customer finds the right deal tailored to their specific needs.
-              </p>
-          </blockquote>
-          <p>  Through our commitment to transparency, choice, and customer empowerment, Solar Energy Host is dedicated to making informed decisions about solar energy straightforward and accessible. Thanks to our platform, people looking up terms like “is my home good for solar panels” or “in home solar” are positioned to make smarter, more informed decisions, ultimately leading to a brighter, more sustainable future powered by solar energy.
-          </p>
+          Austin solar panel <br />installation</h1>
+        <p class="banner-info__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
       </div>
-  </div>
-</section>
-
-<section class="quote-wrapper">
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-top.png" alt="Top-Image">
-  </div>
-  <div class="quote-container">
-    <div class="page-container">
-      <div class="quote--bg-image">
-        <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
-
-        <div class="quote--content">
-          <h2>Get Your Free Quotes Today</h2>
-          <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
-          <form action="/form.html" method="get">
-            <div class="zipcode-wrap">
-              <input type="text" name="zip" placeholder="Enter Zip code" id="">
-              <button type="submit" class="btn-rect">
-                Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+      <form action="/form.html" method="get">
+        <div class="zipcode-wrap">
+          <input type="text" name="zip" placeholder="Enter Zip code" id="">
+          <button type="submit" class="btn-rect">
+            Free Cost Estimate<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
               </svg>
             </span>
           </button>
         </div>
       </form>
-          <div class="mobile-image">
-            <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+    </div>
+  </section>
+
+  <section class="austin-content-wrapper">
+    <div class="page-container">
+      <h2>Austin solar panel installation</h2>
+      <div class="content--text-today content-hover">
+        <p>In today’s rapidly advancing world, where the shift towards renewable energy sources is more crucial than
+          ever, solar energy offers more benefits beyond environmental preservation. It’s ideal for homeowners who want
+          to reduce their carbon footprint while potentially saving on energy costs. </p>
+        <p>However, the journey to harnessing the sun’s energy can be challenging and overwhelming, especially with the
+          many providers crowding the market. This is where <span class="text--solar">Solar Energy Host can provide some
+            much-needed guidance</span>; we simplify the process of comparing different options online.</p>
+        <blockquote>
+          <p>
+            Our mission is rooted in empowerment, offering a platform that facilitates connections with premier
+            providers in your area so that you and other homeowners can easily receive competitive quotes and compare
+            different offers. This approach saves valuable time, reduces hassle, and guarantees that each customer finds
+            the right deal tailored to their specific needs.
+          </p>
+        </blockquote>
+        <p> Through our commitment to transparency, choice, and customer empowerment, Solar Energy Host is dedicated to
+          making informed decisions about solar energy straightforward and accessible. Thanks to our platform, people
+          looking up terms like “is my home good for solar panels” or “in home solar” are positioned to make smarter,
+          more informed decisions, ultimately leading to a brighter, more sustainable future powered by solar energy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-wrapper">
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-top.png" alt="Top-Image">
+    </div>
+    <div class="quote-container">
+      <div class="page-container">
+        <div class="quote--bg-image">
+          <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
+
+          <div class="quote--content">
+            <h2>Get Your Free Quotes Today</h2>
+            <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use
+              form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+            <div class="mobile-image">
+              <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-btm.png" alt="Bottom-Image">
+    </div>
+  </section>
+
+  <section class="austin-content-wrapper">
+    <div class="page-container">
+      <div class="content--text-today">
+        <p>At Solar Energy Host, we meticulously vet and partner with only reputable local solar providers. Our
+          comprehensive comparison tool is designed with the user in mind, offering a seamless experience. </p>
+        <p>We aggregate quotes from multiple local providers so you can access competitive deals and significant savings
+          on solar energy solutions tailored specifically to your regional needs and preferences. Recognizing the
+          importance of safeguarding our users’ information, Solar Energy Host employs the latest encryption technology,
+          providing a safe and secure platform for obtaining solar quotes. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="connect-content-wrapper">
+    <div class="page-container">
+      <div class="content-connect">
+        <h3>
+          Connect with top local providers</h3>
+        <div class="content--list">
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+        <p>Moreover, our ability to generate competitive quotes ensures that our users find cost-effective solar
+          options, emphasizing our platform’s value in facilitating affordable transitions to solar energy. Solar Energy
+          Host makes the journey towards solar conversion effortless, allowing you to end your search for terms like “is
+          my home good for solar panels.” Instead of wasting energy by looking up terms like “investing in solar panels
+          for home” or “large solar panels for homes,” you can quickly and easily receive tailored quotes from our wide
+          network of trusted solar providers using our platform. </p>
+        <p> Ensuring that we match our customers with services that offer both exceptional quality and value, we move
+          forward in our mission to empower, inform, and assist people in making the smartest choice for their solar
+          energy needs. </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="solar-energy-wrapper">
+    <div class="page-container">
+      <div class="content-info-work">
+        <h2>How it works</h2>
+        <div class="container-boxes">
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>1</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-connect.png" alt="">
+              </div>
+            </div>
+            <div class="box-info">
+              <h3>Connect with top local providers</h3>
+              <p>Enter basic information to connect with solar providers in your area</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>2</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-quotes.png" alt="">
+              </div>
+            </div>
+            <h3>Get competitive quotes delivered to you</h3>
+            <p>Enter basic information to connect with solar providers in your area</p>
+          </div>
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>3</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-saving.png" alt="">
+              </div>
+            </div>
+            <h3>Start saving with the
+              best offer</h3>
+            <p>Enter basic information to connect with solar providers in your area</p>
           </div>
         </div>
       </div>
-      
-    </div>
-  </div>
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-btm.png" alt="Bottom-Image">
-  </div>
-</section>
 
-<section class="austin-content-wrapper">
-  <div class="page-container">
-      <div class="content--text-today">
-          <p>At Solar Energy Host, we meticulously vet and partner with only reputable local solar providers. Our comprehensive comparison tool is designed with the user in mind, offering a seamless experience. </p>
-          <p>We aggregate quotes from multiple local providers so you can access competitive deals and significant savings on solar energy solutions tailored specifically to your regional needs and preferences. Recognizing the importance of safeguarding our users’ information, Solar Energy Host employs the latest encryption technology, providing a safe and secure platform for obtaining solar quotes. </p>
-      </div>
-  </div>
-</section>
-
-<section class="connect-content-wrapper">
-  <div class="page-container">
-      <div class="content-connect">
-          <h3>
-              Connect with top local providers</h3>
-              <div class="content--list">
-                  <ul>
-                      <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  <li>Lorem ipsum dolor sit amet.</li>
-                  </ul>
-              </div>
-              <p>Moreover, our ability to generate competitive quotes ensures that our users find cost-effective solar options, emphasizing our platform’s value in facilitating affordable transitions to solar energy. Solar Energy Host makes the journey towards solar conversion effortless, allowing you to end your search for terms like “is my home good for solar panels.” Instead of wasting energy by looking up terms like “investing in solar panels for home” or “large solar panels for homes,” you can quickly and easily receive tailored quotes from our wide network of trusted solar providers using our platform.  </p>
-          <p> Ensuring that we match our customers with services that offer both exceptional quality and value, we move forward in our mission to empower, inform, and assist people in making the smartest choice for their solar energy needs. </p>
-      </div>
-  </div>
-</section>
-
-<section class="solar-energy-wrapper">
-  <div class="page-container">
-   <div class="content-info-work">
-    <h2>How it works</h2>
-    <div class="container-boxes">
-      <div class="box">
-       <div class="num-wrapper">
-         <div class="num">
-           <span>1</span>
-         </div>
-         <div class="icon-wrap">
-          <img src="assets/images/icon-connect.png" alt="">      
-        </div>   
-       </div>
-       <div class="box-info">
-         <h3>Connect with top local providers</h3>
-         <p>Enter basic information to connect with solar providers in your area</p>
-       </div>
-     </div>
-     <div class="box">
-       <div class="num-wrapper">
-         <div class="num">
-           <span>2</span>
-         </div>
-         <div class="icon-wrap">
-          <img src="assets/images/icon-quotes.png" alt="">      
-        </div> 
-      </div>
-      <h3>Get competitive quotes delivered to you</h3>
-      <p>Enter basic information to connect with solar providers in your area</p>
     </div>
-    <div class="box">
-     <div class="num-wrapper">
-       <div class="num">
-         <span>3</span>
-       </div>
-       <div class="icon-wrap">
-        <img src="assets/images/icon-saving.png" alt="">      
-      </div> 
-     </div>
-     <h3>Start saving with the 
-     best offer</h3>
-     <p>Enter basic information to connect with solar providers in your area</p>
-   </div>
- </div>
-</div>
+  </section>
 
-</div>
-</section>
-
-<section class="austin-content-wrapper btm-margin">
-  <div class="page-container">
-      <div class="content--text-today">
-          <p>Navigating different solar energy options can seem daunting, but <a hre="">Solar Energy Host</a>  has streamlined the process to make finding the right solution as straightforward as possible. After entering your information on our website, you’ll get an easy-to-understand overview of the solar providers in your area that cater to your needs, which is much easier than researching specific providers one by one.  </p>
-          <p> This initial step is quick, easy, and completely obligation-free so when you decide to go solar, you’ll be selecting a solution that offers significant savings. Solar Energy Host is dedicated to guiding you toward making an informed decision that aligns with your financial and environmental goals.  </p>
-          <p>We encourage you to say goodbye to frustrating searches for terms like “installing solar energy at home” and “integrated solar homes” and take that first step towards a brighter, more sustainable future. Your journey with us is designed to be easy, efficient, and, most importantly, empowering, giving you back control of your energy expenses </p>
-      </div>
-  </div>
- 
-</section>
-
-<section class="benefit-wrapper">
-  <div class="page-container">
-    <div class="title--benefits">
-      <h2>Benefits of Solar</h2>
-    </div>
-    <div class="section--grid-container container-benefits">
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_cost-savings.png" alt="">
-        </div>
-        <div class="grid-content ">
-          <h3>Cost Savings</h3>
-          <p>Slash electricity bills with free, renewable energy.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_environmental-impact.png" alt="">
-        </div>
-        <div class="grid-content">
-          <h3> Envionmental Impact</h3>
-          <p>Reduce emissions, improve air quality, and protect the planet.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_energy-independence.png" alt="">
-        </div>
-        <div class="grid-content">
-          <h3>Energy Independence</h3>
-          <p>Take control of your energy future with solar power.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_low-maintenance.png" alt="">
-        </div>
-        <div class="grid-content">
-          <h3>Low Maintenance</h3>
-          <p>Enjoy hassle-free energy production with minimal upkeep.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_long-term-investment.png" alt="">
-        </div>
-        <div class="grid-content">
-          <h3>Long-Term Investment</h3>
-          <p>Increase property value and enjoy solid returns over time.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_financial-incentives.png" alt="">
-        </div>
-        <div class="grid-content">
-          <h3>Financial Incentives</h3>
-          <p>Access government incentives for affordable solar solutions.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="education-content-wrapper">
-  <div class="page-container">
-    <div class="title-wrap">
-      <h2>Other Education content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="education-slide-wrap">
-      <div class="swiper-wrapper">
-      <div class="education-block swiper-slide">
-        <h3>Top solar panel installers</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-        </svg></a>
-      </div>
-      <div class="education-block swiper-slide">
-        <h3>Top solar panel installers</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-        </svg></a>
-      </div>
-      <div class="education-block swiper-slide">
-        <h3>Top solar panel installers</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-        </svg></a>
-      </div>
-      <div class="education-block swiper-slide">
-        <h3>Top solar panel installers</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-        </svg></a>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
-
-<section class="saving-wrapper">
-  <div class="page-container">
-    <div class="contain-start-over">
-      <div class="contain-wrapper">
-        <div class="contain-saving-header">
-          <div class="saving-header">
-           <h2>Start Saving Now!</h2>
-           <p>Join the millions of homeowners who have already made to switch to solar</p>
-         </div>
-        <form action="/form.html" method="get">
-          <div class="zipcode-wrap">
-            <input type="text" name="zip" placeholder="Enter Zip code" id="">
-            <button type="submit" class="btn-rect">
-              Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </form>
-      </div>  
-      <div class="image-info">
-        <img src="assets/images/start-saving-now.png" alt="image of house and man">
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<footer>
-  <div class="footer__navbar-wrapper">
+  <section class="austin-content-wrapper btm-margin">
     <div class="page-container">
-      <div class="navbar__logo-wrapper">
-        <a href="index.html" class="logo-white">
-          <img src="assets/images/logo-white.png" alt="Logo White"/>
-         </a>
+      <div class="content--text-today">
+        <p>Navigating different solar energy options can seem daunting, but <a hre="">Solar Energy Host</a> has
+          streamlined the process to make finding the right solution as straightforward as possible. After entering your
+          information on our website, you’ll get an easy-to-understand overview of the solar providers in your area that
+          cater to your needs, which is much easier than researching specific providers one by one. </p>
+        <p> This initial step is quick, easy, and completely obligation-free so when you decide to go solar, you’ll be
+          selecting a solution that offers significant savings. Solar Energy Host is dedicated to guiding you toward
+          making an informed decision that aligns with your financial and environmental goals. </p>
+        <p>We encourage you to say goodbye to frustrating searches for terms like “installing solar energy at home” and
+          “integrated solar homes” and take that first step towards a brighter, more sustainable future. Your journey
+          with us is designed to be easy, efficient, and, most importantly, empowering, giving you back control of your
+          energy expenses </p>
       </div>
-      <div class="navbar__menu-wrapper">
-        <ul class="navbar__menu">
-          <li><a href="">Home Solar Batteries</a></li>
-          <li><a href="">Solar Panel Installation</a></li>
-          <li><a href="">How it works</a></li>
-          <li><a href="">Solar Guide</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="cpr-wrapper">Copyright © 2018 - 2023 Solarhost co.</div>
     </div>
-  </div>
-</footer>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".education-slide-wrap", {
+  </section>
+
+  <section class="benefit-wrapper">
+    <div class="page-container">
+      <div class="title--benefits">
+        <h2>Benefits of Solar</h2>
+      </div>
+      <div class="section--grid-container container-benefits">
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_cost-savings.png" alt="">
+          </div>
+          <div class="grid-content ">
+            <h3>Cost Savings</h3>
+            <p>Slash electricity bills with free, renewable energy.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_environmental-impact.png" alt="">
+          </div>
+          <div class="grid-content">
+            <h3> Envionmental Impact</h3>
+            <p>Reduce emissions, improve air quality, and protect the planet.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_energy-independence.png" alt="">
+          </div>
+          <div class="grid-content">
+            <h3>Energy Independence</h3>
+            <p>Take control of your energy future with solar power.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_low-maintenance.png" alt="">
+          </div>
+          <div class="grid-content">
+            <h3>Low Maintenance</h3>
+            <p>Enjoy hassle-free energy production with minimal upkeep.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_long-term-investment.png" alt="">
+          </div>
+          <div class="grid-content">
+            <h3>Long-Term Investment</h3>
+            <p>Increase property value and enjoy solid returns over time.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_financial-incentives.png" alt="">
+          </div>
+          <div class="grid-content">
+            <h3>Financial Incentives</h3>
+            <p>Access government incentives for affordable solar solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-content-wrapper">
+    <div class="page-container">
+      <div class="title-wrap">
+        <h2>Other Education content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+      </div>
+      <div class="education-slide-wrap">
+        <div class="swiper-wrapper">
+          <div class="education-block swiper-slide">
+            <h3>Top solar panel installers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg></a>
+          </div>
+          <div class="education-block swiper-slide">
+            <h3>Top solar panel installers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg></a>
+          </div>
+          <div class="education-block swiper-slide">
+            <h3>Top solar panel installers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg></a>
+          </div>
+          <div class="education-block swiper-slide">
+            <h3>Top solar panel installers</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a class="more" href="">Learn more <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="saving-wrapper">
+    <div class="page-container">
+      <div class="contain-start-over">
+        <div class="contain-wrapper">
+          <div class="contain-saving-header">
+            <div class="saving-header">
+              <h2>Start Saving Now!</h2>
+              <p>Join the millions of homeowners who have already made to switch to solar</p>
+            </div>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="image-info">
+            <img src="assets/images/start-saving-now.png" alt="image of house and man">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__navbar-wrapper">
+      <div class="page-container">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo-white">
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="cpr-wrapper">Copyright © 2018 - 2023 Solarhost co.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".education-slide-wrap", {
       slidesPerView: 1,
       spaceBetween: 32,
       pagination: {
@@ -432,6 +505,7 @@
         },
       },
     });
-</script>
+  </script>
 </body>
+
 </html>

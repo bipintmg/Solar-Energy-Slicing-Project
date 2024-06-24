@@ -1,79 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="assets/images/title_logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script
       src="https://cdn.jsdelivr.net/npm/less"
       type="text/javascript"
       ></script> -->
 
-      <script src="assets/js/script.js"></script>
-      <title>Solar Energy Host</title>
-    </head>
+  <script src="assets/js/script.js"></script>
+  <title>Solar Energy Host</title>
+</head>
 
-    <body class="reverse">
-      <header>
-        <div class="page-container">
-          <div class="header__navbar-wrapper">
-            <div class="navbar__logo-wrapper">
-              <a href="index.html" class="logo-black">
-                <img src="assets/images/logo-dark.png" alt="Logo Dark"/>
-              </a>
-            </div>
-            <div class="navbar__menu-wrapper">
-              <ul class="navbar__menu">
-                <li><a href="">Home Solar Batteries</a></li>
-                <li><a href="">Solar Panel Installation</a></li>
-                <li><a href="">How it works</a></li>
-                <li><a href="">Solar Guide</a></li>
-                <li><a href="">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar__button-wrapper">
-              <button class="btn-rect">
-                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="burger-wrapper" onclick="burger()">
-            <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
-            </svg>
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
-              <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)" fill="#381606"></rect>
-              <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)" fill="#381606"></rect>
-            </svg>
-          </div>
-          <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
+<body class="reverse">
+  <header>
+    <div class="page-container">
+      <div class="header__navbar-wrapper">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo-black">
+            <img src="assets/images/logo-dark.png" alt="Logo Dark" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar__button-wrapper">
+          <button class="btn-rect">
+            Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="burger-wrapper" onclick="burger()">
+          <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
+            <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)"
+              fill="#381606"></rect>
+            <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)"
+              fill="#381606"></rect>
+          </svg>
+        </div>
+        <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
         
           </div> -->
-        </div>
-        <div class="header__burger-menu-wrapper" id="burger-menu">
-          <div class="burger__menu-wrapper">
-            <ul class="burger__menu">
-              <li><a href="">Home Solar Batteries</a></li>
-              <li><a href="">Solar Panel Installation</a></li>
-              <li><a href="">How it works</a></li>
-              <li><a href="">Solar Guide</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li>
-                <button class="btn-rect burger__btn-rect">
-                  Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+      </div>
+      <div class="header__burger-menu-wrapper" id="burger-menu">
+        <div class="burger__menu-wrapper">
+          <ul class="burger__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <button class="btn-rect burger__btn-rect">
+                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                      fill="white"></path>
                   </svg>
                 </span>
               </button>
@@ -88,7 +104,7 @@
   <section class="zipcode-wrapper">
     <div class="page-container">
       <script src="https://cdn101.profitise.com/form/run.php?p=16462703D85645C39BE45D3194FC2B1E"></script>
-    </div> 
+    </div>
   </section>
 
   <footer>
@@ -96,8 +112,8 @@
       <div class="page-container">
         <div class="navbar__logo-wrapper">
           <a href="index.html" class="logo-white">
-            <img src="assets/images/logo-white.png" alt="Logo White"/>
-           </a>
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
         </div>
         <div class="navbar__menu-wrapper">
           <ul class="navbar__menu">
@@ -113,4 +129,5 @@
     </div>
   </footer>
 </body>
+
 </html>

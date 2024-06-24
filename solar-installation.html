@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="assets/images/title_logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script
       src="https://cdn.jsdelivr.net/npm/less"
       type="text/javascript"
       ></script> -->
-      <script src="assets/js/script.js"></script>
-      <title>Solar Energy Host</title>
-    </head>
+  <script src="assets/js/script.js"></script>
+  <title>Solar Energy Host</title>
+</head>
 
-    <body>
-      <header>
-        <div class="page-container">
-          <div class="header__navbar-wrapper">
-            <div class="navbar__logo-wrapper">
-              <a href="index.html" class="logo-white">
-                <img src="assets/images/logo-white.png" alt="Logo White"/>
-               </a>
-              <a href="index.html" class="logo-black">
-                <img src="assets/images/logo-dark.png" alt="Logo Dark"/>
-              </a>
-            </div>
-            <div class="navbar__menu-wrapper">
-              <ul class="navbar__menu">
-                <li><a href="">Home Solar Batteries</a></li>
-                <li><a href="">Solar Panel Installation</a></li>
-                <li><a href="">How it works</a></li>
-                <li><a href="">Solar Guide</a></li>
-                <li><a href="">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar__button-wrapper">
-              <button class="btn-rect">
-                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="burger-wrapper" onclick="burger()">
-            <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
-            </svg>
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
-              <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)" fill="#381606"></rect>
-              <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)" fill="#381606"></rect>
-            </svg>
-          </div>
-          <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
+<body>
+  <header>
+    <div class="page-container">
+      <div class="header__navbar-wrapper">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo-white">
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
+          <a href="index.html" class="logo-black">
+            <img src="assets/images/logo-dark.png" alt="Logo Dark" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar__button-wrapper">
+          <button class="btn-rect">
+            Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="burger-wrapper" onclick="burger()">
+          <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
+            <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)"
+              fill="#381606"></rect>
+            <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)"
+              fill="#381606"></rect>
+          </svg>
+        </div>
+        <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
         
           </div> -->
-        </div>
-        <div class="header__burger-menu-wrapper" id="burger-menu">
-          <div class="burger__menu-wrapper">
-            <ul class="burger__menu">
-              <li><a href="">Home Solar Batteries</a></li>
-              <li><a href="">Solar Panel Installation</a></li>
-              <li><a href="">How it works</a></li>
-              <li><a href="">Solar Guide</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li>
-                <button class="btn-rect burger__btn-rect">
-                  Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+      </div>
+      <div class="header__burger-menu-wrapper" id="burger-menu">
+        <div class="burger__menu-wrapper">
+          <ul class="burger__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <button class="btn-rect burger__btn-rect">
+                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                      fill="white"></path>
                   </svg>
                 </span>
               </button>
@@ -104,459 +120,526 @@
         <div class="zipcode-wrap">
           <input type="text" name="zip" placeholder="Enter Zip code" id="">
           <button type="submit" class="btn-rect">
-            Free Cost Estimate<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-          </svg>
-        </span>
-      </button>
-    </div>
-  </form>
-</div>
-</section>
-
-<section class="second-need-wrapper">
-  <div class="page-container">
-    <div class="container-content-install">
-      <h2 class="show-desktop">How Solar Installation Can Maximize Your Home’s Energy Efficiency</h2>
-      <div class="container--content">
-        <div class="content--img--text">
-          <div class="content--img">
-            <img src="assets/images/solar-installation-menbg.png" alt="">
-          </div>
-          
-          <div class="content--mobile">
-            <h2>How Solar Installation Can Maximize Your Home’s Energy Efficiency</h2>
-          </div>
-          <div class="content--text">
-            <p>Considering going solar but worried about the costs of solar installation, overwhelmed by the technicalities, or just unsure of where to begin? Renewable energy is a great move towards sustainability and financial savings, but it cannot be helped that things can get a little overwhelming at times.</p>
-            <p>Solar Energy Host is here to light the way by making it easier for you to understand the process. We can link you with leading local solar providers so you receive competitive quotes that fit your energy needs and budget.</p>
-            <p>If you want to inch closer to making your sustainable goals a reality, read on.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="quote-wrapper">
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-top.png" alt="Top-Image">
-  </div>
-  <div class="quote-container">
-    <div class="page-container">
-      <div class="quote--bg-image">
-        <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
-
-        <div class="quote--content">
-          <h2>Get Your Free Quotes Today</h2>
-          <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
-          <form action="/form.html" method="get">
-            <div class="zipcode-wrap">
-              <input type="text" name="zip" placeholder="Enter Zip code" id="">
-              <button type="submit" class="btn-rect">
-                Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+            Free Cost Estimate<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
               </svg>
             </span>
           </button>
         </div>
       </form>
-          <div class="mobile-image">
-            <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+    </div>
+  </section>
+
+  <section class="second-need-wrapper">
+    <div class="page-container">
+      <div class="container-content-install">
+        <h2 class="show-desktop">How Solar Installation Can Maximize Your Home’s Energy Efficiency</h2>
+        <div class="container--content">
+          <div class="content--img--text">
+            <div class="content--img">
+              <img src="assets/images/solar-installation-menbg.png" alt="">
+            </div>
+
+            <div class="content--mobile">
+              <h2>How Solar Installation Can Maximize Your Home’s Energy Efficiency</h2>
+            </div>
+            <div class="content--text">
+              <p>Considering going solar but worried about the costs of solar installation, overwhelmed by the
+                technicalities, or just unsure of where to begin? Renewable energy is a great move towards
+                sustainability and financial savings, but it cannot be helped that things can get a little overwhelming
+                at times.</p>
+              <p>Solar Energy Host is here to light the way by making it easier for you to understand the process. We
+                can link you with leading local solar providers so you receive competitive quotes that fit your energy
+                needs and budget.</p>
+              <p>If you want to inch closer to making your sustainable goals a reality, read on.</p>
+            </div>
           </div>
         </div>
       </div>
-      
     </div>
-  </div>
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-btm.png" alt="Bottom-Image">
-  </div>
-</section>
+  </section>
 
-<section class="solar-energy-wrapper">
-  <div class="page-container">
-   <div class="content-info-work">
-    <h2>How it Works</h2>
-    <div class="container-boxes">
-      <div class="box">
-       <div class="num-wrapper">
-         <div class="num">
-           <span>1</span>
-         </div>
-         <div class="icon-wrap">
-          <img src="assets/images/icon-connect.png" alt="">      
-        </div>   
-       </div>
-       <div class="box-info">
-         <h3>Connect with top local providers</h3>
-         <p>Enter basic information to connect with solar providers in your area</p>
-       </div>
-     </div>
-     <div class="box">
-       <div class="num-wrapper">
-         <div class="num">
-           <span>2</span>
-         </div>
-         <div class="icon-wrap">
-          <img src="assets/images/icon-quotes.png" alt="">      
-        </div> 
-      </div>
-      <h3>Get competitive quotes delivered to you</h3>
-      <p>Enter basic information to connect with solar providers in your area</p>
+  <section class="quote-wrapper">
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-top.png" alt="Top-Image">
     </div>
-    <div class="box">
-     <div class="num-wrapper">
-       <div class="num">
-         <span>3</span>
-       </div>
-       <div class="icon-wrap">
-        <img src="assets/images/icon-saving.png" alt="">      
-      </div> 
-     </div>
-     <h3>Start saving with the 
-     best offer</h3>
-     <p>Enter basic information to connect with solar providers in your area</p>
-   </div>
- </div>
- 
-</div>
+    <div class="quote-container">
+      <div class="page-container">
+        <div class="quote--bg-image">
+          <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
 
-</div>
-</section>
-
-<section class="electricbill-wrapper">
-  <div class="page-container">
-    <div class="content-electric-bill">
-      <h2>What you need to know about going solar</h2>
-      <p>The process of transitioning to solar power shouldn’t be intimidating. While it can be a bit pricey to have the kit installed and get it up and running, you must look at it as an investment that you will reap savings from in the long run. </p>
-      <p>The cost of photovoltaic panels installation depends on many factors, including your home’s total area, the system’s size, and additional equipment required, such as batteries. To make it easier for you to afford the setup, you can avail of the different financing options available to homeowners. </p>
-      <p>Solar energy, a cornerstone of green energy, harnesses the sun’s sustainable and renewable power. With the cost of harnessing solar power decreasing annually, residential solar installation has become an increasingly attractive option for homeowners across the United States.</p>
-      <p>These include solar loans, leases, and power purchase agreements (PPAs). Additionally, the government offers tax incentives that intend to reduce the overall solar installation cost. This aims to encourage more homeowners to make the switch to renewable energy.</p>
-    </div>
-  </div>
-</section>
-
-<section class="simplified-wrapper">
-  <div class="page-container page-containerr">
-    <div class="title--benefits">
-      <h2>Solar setup simplified</h2>
-      <p>To give you an idea of how the installation goes, here’s an overview of the process:</p>
-    </div>
-    <div class="section--grid container-benefits">
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon-connect.png" alt=""/>
-        </div>
-        <div class="grid-content ">
-          <h3>Initial consultation</h3>
-          <p>Experts from your chosen solar installation company will evaluate your home’s solar potential and discuss your energy requirements.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon-quotes.png" alt=""/>
-        </div>
-        <div class="grid-content">
-          <h3> Designing your system</h3>
-          <p>Your provider will design a custom solar power system that ensures maximum efficiency and energy production based on your home's specifications.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_using-the-system.png" alt=""/>
-        </div>
-        <div class="grid-content">
-          <h3>Using the system.</h3>
-          <p>Once installed, your system undergoes a thorough inspection and testing phase. Once everything has tested fine, your line is then connected to the grid, and you can begin generating your own clean, renewable energy.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_solar-installation.png" alt=""/>
-        </div>
-        <div class="grid-content">
-          <h3>Solar installation</h3>
-          <p>Professional technicians will mount the panels strategically to catch as much sunlight as possible. The duration depends on the system size, but it typically takes a few days to finish.</p>
-        </div>   
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="solar-partner-wrapper">
-  <div class="page-container">
-    <div class="partner-host-header">
-      <h2>Solar Energy Host: your partner in solar</h2>
-    </div>
-    <div class="partner-host-paragraph">
-      <p>Solar Energy Host houses all the information you need about going solar, from inquiries to solar power installation, troubleshooting, and proper maintenance and care. </p>
-      <h3>Get started in three easy steps</h3>
-    </div>
-    <div class="solar-installers">
-      <div class="installers-wrapper">
-        <div class="installers-container">
-          <div class="installers-img">
-            <img src="assets/images/solar-installers.png" alt="installers picture">
+          <div class="quote--content">
+            <h2>Get Your Free Quotes Today</h2>
+            <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use
+              form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+            <div class="mobile-image">
+              <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+            </div>
           </div>
-          <div class="connect-installers reverse">
-           <h3>Connect with top local solar installers</h3>
-           <p>Enter basic information about your location and energy needs on our platform, and we'll connect you with reputable solar installation companies in your area.</p>
-         </div>
-       </div>
-       <div class="installers-container">
-        <div class="installers-img installers-reverse">
-          <img src="assets/images/quotes_delivered.png" alt="qotes delivered picture">
         </div>
-        <div class="connect-installers ">
-         <h3>Get competitive quotes delivered to you</h3>
-         <p>We provide a seamless experience for receiving multiple quotes, allowing you to compare options without the hassle of reaching out to each provider individually.
-         </p>
-       </div>
-     </div>
-     <div class="installers-container">
-      <div class="installers-img">
-        <img src="assets/images/review_quotes.png" alt="installers picture">
-      </div>
-      <div class="connect-installers reverse">
-       <h3>Review your quotes to find the right match for your needs</h3>
-       <p>Our platform makes it easy to compare the specifics of each offer, including the types of solar kits available, their capacities, and the cost.
-       </p>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-</section>
 
-<section class="saving-wrapper">
-  <div class="page-container">
-    <div class="contain-start-over">
-      <div class="contain-wrapper">
-        <div class="contain-saving-header">
-          <div class="saving-header">
-           <h2>Start Saving Now!</h2>
-           <p>Join the millions of homeowners who have already made to switch to solar</p>
-         </div>
-        <form action="/form.html" method="get">
-          <div class="zipcode-wrap">
-            <input type="text" name="zip" placeholder="Enter Zip code" id="">
-            <button type="submit" class="btn-rect">
-              Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </form>
-      </div>  
-      <div class="image-info">
-        <img src="assets/images/start-saving-now.png" alt="image of house and man">
       </div>
     </div>
-  </div>
-</div>
-</section>
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-btm.png" alt="Bottom-Image">
+    </div>
+  </section>
 
-<section class="simplified-wrapper">
-  <div class="page-container">
-    <div class="title--suitable">
-      <h2>Are all houses suitable for solar panels?</h2>
-      <p>At Solar Energy Host, we’re committed to helping homeowners become more informed about going solar, from the process of choosing offers to the installation. We’re here to help you save on bills and the environment.Not all houses are ideal for installing solar panels. It depends on several key factors:</p>
-    </div>
-    <div class="section--grid container-benefits">
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_roof-condition-and-material.png" alt=""/>
+  <section class="solar-energy-wrapper">
+    <div class="page-container">
+      <div class="content-info-work">
+        <h2>How it Works</h2>
+        <div class="container-boxes">
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>1</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-connect.png" alt="">
+              </div>
+            </div>
+            <div class="box-info">
+              <h3>Connect with top local providers</h3>
+              <p>Enter basic information to connect with solar providers in your area</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>2</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-quotes.png" alt="">
+              </div>
+            </div>
+            <h3>Get competitive quotes delivered to you</h3>
+            <p>Enter basic information to connect with solar providers in your area</p>
+          </div>
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>3</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-saving.png" alt="">
+              </div>
+            </div>
+            <h3>Start saving with the
+              best offer</h3>
+            <p>Enter basic information to connect with solar providers in your area</p>
+          </div>
         </div>
-        <div class="grid-content ">
-          <h3>Roof condition and material</h3>
-          <p>A well-maintained roof can handle rooftop solar installation and even shield it from damage. But if it's older than 40 years, it might not be strong enough. Most types of roofs are okay for solar panels, except for wooden ones, due to a higher fire risk.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_roof-orientation-and-space.png" alt=""/>
-        </div>
-        <div class="grid-content">
-          <h3>Roof orientation and space</h3>
-          <p>Roofs facing south get the most sun in the Northern Hemisphere, while east and west-facing roofs get around less sunlight.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_shading.png" alt=""/>
-        </div>
-        <div class="grid-content">
-          <h3>Shading</h3>
-          <p>For peak efficiency, the panels need direct sunlight. Any shading by trees or buildings cuts down their energy output.</p>
-        </div>
-      </div>
-      <div class="grid-item item-block">
-        <div class="grid-icons">
-          <img src="assets/images/icon_energy-efficiency-of-the-home.png" alt=""/>
-        </div>
-        <div class="grid-content">
-          <h3>Energy efficiency of the home</h3>
-          <p>A home energy audit before installation can identify ways to lower energy use, reducing the number and cost of panels needed.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="electricbill-wrapper">
-  <div class="page-container">
-    <div class="content-electric-bill">
-      <h2>Will I still receive an electric bill if I switch to solar?</h2>
-      <p>You will likely continue to receive an electric bill even after switching to solar energy, but the bill amount can significantly decrease, potentially to zero or even result in a credit from your utility company, depending on many factors.</p>
+      </div>
+
     </div>
-    <div class="content-best-place">
-      <h2 class="show-desktop">
-        Where is the best place for solar panels on my roof?
-      </h2>
-      <div class="content-textImg">
-        <div class="content-Img">
-          <img src="assets/images/solar-install-img.png" alt="Solar Install Kits">
+  </section>
+
+  <section class="electricbill-wrapper">
+    <div class="page-container">
+      <div class="content-electric-bill">
+        <h2>What you need to know about going solar</h2>
+        <p>The process of transitioning to solar power shouldn’t be intimidating. While it can be a bit pricey to have
+          the kit installed and get it up and running, you must look at it as an investment that you will reap savings
+          from in the long run. </p>
+        <p>The cost of photovoltaic panels installation depends on many factors, including your home’s total area, the
+          system’s size, and additional equipment required, such as batteries. To make it easier for you to afford the
+          setup, you can avail of the different financing options available to homeowners. </p>
+        <p>Solar energy, a cornerstone of green energy, harnesses the sun’s sustainable and renewable power. With the
+          cost of harnessing solar power decreasing annually, residential solar installation has become an increasingly
+          attractive option for homeowners across the United States.</p>
+        <p>These include solar loans, leases, and power purchase agreements (PPAs). Additionally, the government offers
+          tax incentives that intend to reduce the overall solar installation cost. This aims to encourage more
+          homeowners to make the switch to renewable energy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="simplified-wrapper">
+    <div class="page-container page-containerr">
+      <div class="title--benefits">
+        <h2>Solar setup simplified</h2>
+        <p>To give you an idea of how the installation goes, here’s an overview of the process:</p>
+      </div>
+      <div class="section--grid container-benefits">
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon-connect.png" alt="" />
+          </div>
+          <div class="grid-content ">
+            <h3>Initial consultation</h3>
+            <p>Experts from your chosen solar installation company will evaluate your home’s solar potential and discuss
+              your energy requirements.</p>
+          </div>
         </div>
-        <h2 class="show-mobile">
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon-quotes.png" alt="" />
+          </div>
+          <div class="grid-content">
+            <h3> Designing your system</h3>
+            <p>Your provider will design a custom solar power system that ensures maximum efficiency and energy
+              production based on your home's specifications.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_using-the-system.png" alt="" />
+          </div>
+          <div class="grid-content">
+            <h3>Using the system.</h3>
+            <p>Once installed, your system undergoes a thorough inspection and testing phase. Once everything has tested
+              fine, your line is then connected to the grid, and you can begin generating your own clean, renewable
+              energy.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_solar-installation.png" alt="" />
+          </div>
+          <div class="grid-content">
+            <h3>Solar installation</h3>
+            <p>Professional technicians will mount the panels strategically to catch as much sunlight as possible. The
+              duration depends on the system size, but it typically takes a few days to finish.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solar-partner-wrapper">
+    <div class="page-container">
+      <div class="partner-host-header">
+        <h2>Solar Energy Host: your partner in solar</h2>
+      </div>
+      <div class="partner-host-paragraph">
+        <p>Solar Energy Host houses all the information you need about going solar, from inquiries to solar power
+          installation, troubleshooting, and proper maintenance and care. </p>
+        <h3>Get started in three easy steps</h3>
+      </div>
+      <div class="solar-installers">
+        <div class="installers-wrapper">
+          <div class="installers-container">
+            <div class="installers-img">
+              <img src="assets/images/solar-installers.png" alt="installers picture">
+            </div>
+            <div class="connect-installers reverse">
+              <h3>Connect with top local solar installers</h3>
+              <p>Enter basic information about your location and energy needs on our platform, and we'll connect you
+                with reputable solar installation companies in your area.</p>
+            </div>
+          </div>
+          <div class="installers-container">
+            <div class="installers-img installers-reverse">
+              <img src="assets/images/quotes_delivered.png" alt="qotes delivered picture">
+            </div>
+            <div class="connect-installers ">
+              <h3>Get competitive quotes delivered to you</h3>
+              <p>We provide a seamless experience for receiving multiple quotes, allowing you to compare options without
+                the hassle of reaching out to each provider individually.
+              </p>
+            </div>
+          </div>
+          <div class="installers-container">
+            <div class="installers-img">
+              <img src="assets/images/review_quotes.png" alt="installers picture">
+            </div>
+            <div class="connect-installers reverse">
+              <h3>Review your quotes to find the right match for your needs</h3>
+              <p>Our platform makes it easy to compare the specifics of each offer, including the types of solar kits
+                available, their capacities, and the cost.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="saving-wrapper">
+    <div class="page-container">
+      <div class="contain-start-over">
+        <div class="contain-wrapper">
+          <div class="contain-saving-header">
+            <div class="saving-header">
+              <h2>Start Saving Now!</h2>
+              <p>Join the millions of homeowners who have already made to switch to solar</p>
+            </div>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="image-info">
+            <img src="assets/images/start-saving-now.png" alt="image of house and man">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simplified-wrapper">
+    <div class="page-container">
+      <div class="title--suitable">
+        <h2>Are all houses suitable for solar panels?</h2>
+        <p>At Solar Energy Host, we’re committed to helping homeowners become more informed about going solar, from the
+          process of choosing offers to the installation. We’re here to help you save on bills and the environment.Not
+          all houses are ideal for installing solar panels. It depends on several key factors:</p>
+      </div>
+      <div class="section--grid container-benefits">
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_roof-condition-and-material.png" alt="" />
+          </div>
+          <div class="grid-content ">
+            <h3>Roof condition and material</h3>
+            <p>A well-maintained roof can handle rooftop solar installation and even shield it from damage. But if it's
+              older than 40 years, it might not be strong enough. Most types of roofs are okay for solar panels, except
+              for wooden ones, due to a higher fire risk.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_roof-orientation-and-space.png" alt="" />
+          </div>
+          <div class="grid-content">
+            <h3>Roof orientation and space</h3>
+            <p>Roofs facing south get the most sun in the Northern Hemisphere, while east and west-facing roofs get
+              around less sunlight.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_shading.png" alt="" />
+          </div>
+          <div class="grid-content">
+            <h3>Shading</h3>
+            <p>For peak efficiency, the panels need direct sunlight. Any shading by trees or buildings cuts down their
+              energy output.</p>
+          </div>
+        </div>
+        <div class="grid-item item-block">
+          <div class="grid-icons">
+            <img src="assets/images/icon_energy-efficiency-of-the-home.png" alt="" />
+          </div>
+          <div class="grid-content">
+            <h3>Energy efficiency of the home</h3>
+            <p>A home energy audit before installation can identify ways to lower energy use, reducing the number and
+              cost of panels needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="electricbill-wrapper">
+    <div class="page-container">
+      <div class="content-electric-bill">
+        <h2>Will I still receive an electric bill if I switch to solar?</h2>
+        <p>You will likely continue to receive an electric bill even after switching to solar energy, but the bill
+          amount can significantly decrease, potentially to zero or even result in a credit from your utility company,
+          depending on many factors.</p>
+      </div>
+      <div class="content-best-place">
+        <h2 class="show-desktop">
           Where is the best place for solar panels on my roof?
         </h2>
-        <div class="content-text">
-          <p>The best place to install solar panels on your roof depends on several factors, including the direction your roof faces, its tilt, and whether you’re using net metering or solar batteries. 
-          </p>
-          <p>In the U.S., south-facing roofs are prime for maximum generation. For a residential solar installation with solar batteries, this orientation ensures efficient charging.
-          </p>
-          <p>
-            Plus, it’s recommended that the panels be tilted at an angle to the horizontal, approximately in line with the latitude of the property. Plus, it’s also best to avoid placing the panels near trees, chimneys, and other structures since the shadows throughout the day can affect how much energy from the sunlight is absorbed.
+        <div class="content-textImg">
+          <div class="content-Img">
+            <img src="assets/images/solar-install-img.png" alt="Solar Install Kits">
+          </div>
+          <h2 class="show-mobile">
+            Where is the best place for solar panels on my roof?
+          </h2>
+          <div class="content-text">
+            <p>The best place to install solar panels on your roof depends on several factors, including the direction
+              your roof faces, its tilt, and whether you’re using net metering or solar batteries.
+            </p>
+            <p>In the U.S., south-facing roofs are prime for maximum generation. For a residential solar installation
+              with solar batteries, this orientation ensures efficient charging.
+            </p>
+            <p>
+              Plus, it’s recommended that the panels be tilted at an angle to the horizontal, approximately in line with
+              the latitude of the property. Plus, it’s also best to avoid placing the panels near trees, chimneys, and
+              other structures since the shadows throughout the day can affect how much energy from the sunlight is
+              absorbed.
 
-          </p>
+            </p>
+          </div>
+
         </div>
-        
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="quote-wrapper">
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-top.png" alt="Top-Image">
-  </div>
-  <div class="quote-container">
-    <div class="page-container">
-      <div class="quote--bg-image">
-        <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
+  <section class="quote-wrapper">
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-top.png" alt="Top-Image">
+    </div>
+    <div class="quote-container">
+      <div class="page-container">
+        <div class="quote--bg-image">
+          <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
 
-        <div class="quote--content">
-          <h2>Get Your Free Quotes Today</h2>
-          <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
-          <form action="/form.html" method="get">
-            <div class="zipcode-wrap">
-              <input type="text" name="zip" placeholder="Enter Zip code" id="">
-              <button type="submit" class="btn-rect">
-                Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-              </svg>
-            </span>
-          </button>
+          <div class="quote--content">
+            <h2>Get Your Free Quotes Today</h2>
+            <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use
+              form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+            <div class="mobile-image">
+              <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+            </div>
+          </div>
         </div>
-      </form>
-          <div class="mobile-image">
-            <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+
+      </div>
+    </div>
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-btm.png" alt="Bottom-Image">
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="page-container">
+      <div class="benefits-header-part">
+        <h2>How difficult is it to install solar panels DIY?</h2>
+        <p>DIY solar panel installation can lead to more savings compared to professional setups, but it’s not without
+          its challenges. It’s more ideal for smaller, off-grid projects like RVs or cabins. However, it’s not
+          recommended for big setups due to the complexities of electrical work, safety risks, and potential for roof
+          damage. </p>
+        <p>Moreover, DIY jobs may miss out on warranty protections. For those feeling uncertain, get started with us at
+          Solar Energy Host. We can connect you with top professionals who can help ensure your solar journey is smooth
+          and secure, guaranteeing correct installation and efficiency.</p>
+      </div>
+      <div class="benefits-header-part">
+        <h2>Where can I buy a complete solar kit for my house?</h2>
+        <p>This is what Solar Energy Host is here for. We specialize in connecting homeowners like you with the
+          resources and information needed to understand the process and link you with the right businesses and people.
+          While we don’t sell solar kits directly, we’ll deliver quotes from local providers so you can pick and choose
+          which solar kits fit your budget and are right for your house. </p>
+      </div>
+  </section>
+  <section class="maintainance-wrapper">
+    <div class="page-container">
+      <div class="maintainance-for-mobile">
+        <img src="assets/images/solar-energy-host.png" alt="">
+        <h2>Discover Solar Savings with Solar Energy Host</h2>
+      </div>
+      <div class="maintainance-header">
+        <h2>Discover Solar Savings with Solar Energy Host</h2>
+      </div>
+      <div class="maintainance-container">
+        <div class="maintainance-img">
+          <img src="assets/images/solar-energy-host.png" alt="">
+        </div>
+        <div class="maintainance-details">
+          <p>Understanding that the transition to green energy is a significant decision, Solar Energy Host simplifies
+            the process by providing expert insights from planning to installation.</p>
+          <p>Plus, our service is designed to empower you with choice and transparency, so you can quickly and
+            efficiently find the right match that will give you maximum saving potential while enhancing your home’s
+            energy efficiency.
+          </p>
+          <p>Whether you’re taking the first step towards solar or looking to optimize your current setup, we’re here to
+            make your journey as rewarding as possible. Discover the potential savings and learn what the cost of solar
+            panel installation could be for your home. Reach out to Solar Energy Host today!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="saving-wrapper">
+    <div class="page-container">
+      <div class="contain-start-over">
+        <div class="contain-wrapper">
+          <div class="contain-saving-header">
+            <div class="saving-header">
+              <h2>Start Saving Now!</h2>
+              <p>Join the millions of homeowners who have already made to switch to solar</p>
+            </div>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="image-info">
+            <img src="assets/images/start-saving-now.png" alt="image of house and man">
           </div>
         </div>
       </div>
-      
     </div>
-  </div>
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-btm.png" alt="Bottom-Image">
-  </div>
-</section>
-
-<section class="benefits">
-  <div class="page-container">
-   <div class="benefits-header-part">
-    <h2>How difficult is it to install solar panels DIY?</h2>
-    <p>DIY solar panel installation can lead to more savings compared to professional setups, but it’s not without its challenges. It’s more ideal for smaller, off-grid projects like RVs or cabins. However, it’s not recommended for big setups due to the complexities of electrical work, safety risks, and potential for roof damage. </p>
-    <p>Moreover, DIY jobs may miss out on warranty protections. For those feeling uncertain, get started with us at Solar Energy Host. We can connect you with top professionals who can help ensure your solar journey is smooth and secure, guaranteeing correct installation and efficiency.</p>
-  </div>
-  <div class="benefits-header-part">
-    <h2>Where can I buy a complete solar kit for my house?</h2>
-    <p>This is what Solar Energy Host is here for. We specialize in connecting homeowners like you with the resources and information needed to understand the process and link you with the right businesses and people. While we don’t sell solar kits directly, we’ll deliver quotes from local providers so you can pick and choose which solar kits fit your budget and are right for your house. </p>
-  </div>
-</section>
-<section class="maintainance-wrapper">
-  <div class="page-container">
-    <div class="maintainance-for-mobile">
-      <img src="assets/images/solar-energy-host.png" alt="">
-      <h2>Discover Solar Savings with Solar Energy Host</h2>
-    </div>
-    <div class="maintainance-header">
-      <h2>Discover Solar Savings with Solar Energy Host</h2>
-    </div>
-    <div class="maintainance-container">
-      <div class="maintainance-img">
-        <img src="assets/images/solar-energy-host.png" alt="">
-      </div>
-      <div class="maintainance-details">
-        <p>Understanding that the transition to green energy is a significant decision, Solar Energy Host simplifies the process by providing expert insights from planning to installation.</p>
-        <p>Plus, our service is designed to empower you with choice and transparency, so you can quickly and efficiently find the right match that will give you maximum saving potential while enhancing your home’s energy efficiency.
-        </p>
-        <p>Whether you’re taking the first step towards solar or looking to optimize your current setup, we’re here to make your journey as rewarding as possible. Discover the potential savings and learn what the cost of solar panel installation could be for your home. Reach out to Solar Energy Host today!
-        </p>
+  </section>
+  <footer>
+    <div class="footer__navbar-wrapper">
+      <div class="page-container">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="cpr-wrapper">Copyright © 2018 - 2023 Solarhost co.</div>
       </div>
     </div>
-  </div>
-</section>
-<section class="saving-wrapper">
-  <div class="page-container">
-    <div class="contain-start-over">
-      <div class="contain-wrapper">
-        <div class="contain-saving-header">
-          <div class="saving-header">
-           <h2>Start Saving Now!</h2>
-           <p>Join the millions of homeowners who have already made to switch to solar</p>
-         </div>
-        <form action="/form.html" method="get">
-          <div class="zipcode-wrap">
-            <input type="text" name="zip" placeholder="Enter Zip code" id="">
-            <button type="submit" class="btn-rect">
-              Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </form>
-      </div>  
-      <div class="image-info">
-        <img src="assets/images/start-saving-now.png" alt="image of house and man">
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<footer>
-  <div class="footer__navbar-wrapper">
-    <div class="page-container">
-      <div class="navbar__logo-wrapper">
-        <a href="index.html" class="logo">
-          <img src="assets/images/logo-white.png" alt="Logo White"/>
-         </a>
-      </div>
-      <div class="navbar__menu-wrapper">
-        <ul class="navbar__menu">
-          <li><a href="">Home Solar Batteries</a></li>
-          <li><a href="">Solar Panel Installation</a></li>
-          <li><a href="">How it works</a></li>
-          <li><a href="">Solar Guide</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="cpr-wrapper">Copyright © 2018 - 2023 Solarhost co.</div>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>

@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/global.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="assets/images/title_logo.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script
       src="https://cdn.jsdelivr.net/npm/less"
       type="text/javascript"
       ></script> -->
-      <script src="assets/js/script.js"></script>
-      <title>Solar Energy Host</title>
-    </head>
+  <script src="assets/js/script.js"></script>
+  <title>Solar Energy Host</title>
+</head>
 
-    <body>
-      <header>
-        <div class="page-container">
-          <div class="header__navbar-wrapper">
-            <div class="navbar__logo-wrapper">
-              <a href="index.html" class="logo-white">
-                <img src="assets/images/logo-white.png" alt="Logo White"/>
-               </a>
-              <a href="index.html" class="logo-black">
-                <img src="assets/images/logo-dark.png" alt="Logo Dark"/>
-              </a>
-            </div>
-            <div class="navbar__menu-wrapper">
-              <ul class="navbar__menu">
-                <li><a href="">Home Solar Batteries</a></li>
-                <li><a href="">Solar Panel Installation</a></li>
-                <li><a href="">How it works</a></li>
-                <li><a href="">Solar Guide</a></li>
-                <li><a href="">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar__button-wrapper">
-              <button class="btn-rect">
-                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <div class="burger-wrapper" onclick="burger()">
-            <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
-              <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
-            </svg>
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
-              <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)" fill="#381606"></rect>
-              <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)" fill="#381606"></rect>
-            </svg>
-          </div>
-          <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
+<body>
+  <header>
+    <div class="page-container">
+      <div class="header__navbar-wrapper">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo-white">
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
+          <a href="index.html" class="logo-black">
+            <img src="assets/images/logo-dark.png" alt="Logo Dark" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar__button-wrapper">
+          <button class="btn-rect">
+            Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="burger-wrapper" onclick="burger()">
+          <svg id="burger" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="18" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="23" width="23" height="2" rx="1" fill="white"></rect>
+            <rect x="12" y="28" width="23" height="2" rx="1" fill="white"></rect>
+          </svg>
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="cross">
+            <rect x="14.6611" y="31.4246" width="23" height="2" rx="1" transform="rotate(-45 14.6611 31.4246)"
+              fill="#381606"></rect>
+            <rect x="16.0754" y="15.1611" width="23" height="2" rx="1" transform="rotate(45 16.0754 15.1611)"
+              fill="#381606"></rect>
+          </svg>
+        </div>
+        <!-- <div class="burger-cross-wrapper" style="display: none;" onclick="burger()">
         
           </div> -->
-        </div>
-        <div class="header__burger-menu-wrapper" id="burger-menu">
-          <div class="burger__menu-wrapper">
-            <ul class="burger__menu">
-              <li><a href="">Home Solar Batteries</a></li>
-              <li><a href="">Solar Panel Installation</a></li>
-              <li><a href="">How it works</a></li>
-              <li><a href="">Solar Guide</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li>
-                <button class="btn-rect burger__btn-rect">
-                  Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+      </div>
+      <div class="header__burger-menu-wrapper" id="burger-menu">
+        <div class="burger__menu-wrapper">
+          <ul class="burger__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li>
+              <button class="btn-rect burger__btn-rect">
+                Start Saving Now<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                      fill="white"></path>
                   </svg>
                 </span>
               </button>
@@ -95,399 +111,466 @@
       <div class="banner__banner-info">
         <h1 class="banner-info__title">
           Solar Panel Installation
-      </h1>
-      <p class="banner-info__subtitle">
-        Want to save on energy bills while helping the environment? Solar Energy Host offers information about solar panel installation. See how much you can save now! 
-      </p>
-    </div>
-    <form action="/form.html" method="get">
-      <div class="zipcode-wrap">
-        <input type="text" name="zip" placeholder="Enter Zip code" id="">
-        <button type="submit" class="btn-rect">
-          Free Cost Estimate<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-        </svg>
-      </span>
-    </button>
-  </div>
-</form>
-</div>
-</section>
-
-<section class="second-need-wrapper">
-  <div class="page-container">
-    <div class="container-content-what">
-      <h2>What You Need To Know</h2>
-      <div class="container--content">
-        <div class="content--img--text">
-          <div class="content--img">
-            <img src="assets/images/What-yellowgirl.png" alt="Image Girl">
-          </div>
-          
-          <div class="content--mobile">
-            <h2>What You Need To Know</h2>
-          </div>
-          <div class="content--text">
-            <p>There’s a way to save on your energy bills and help the environment with just one smart choice: getting a solar panel installation service.&nbsp;</p>
-            <p>
-              If this is your first time exploring solar energy, we understand how the technicalities and sea of options can quickly become overwhelming. This is what we at Solar Energy Host are for—we’re offering you information and tools to help you make an informed choice. 
-            </p>
-            <p>
-              Read on for more information about the benefits of solar energy, how to get one for your home, and how you can conveniently find reliable solar panel installers in your area with the help of Solar Energy Host.&nbsp;
-            </p>
-          </div>
-        </div>
+        </h1>
+        <p class="banner-info__subtitle">
+          Want to save on energy bills while helping the environment? Solar Energy Host offers information about solar
+          panel installation. See how much you can save now!
+        </p>
       </div>
-    </div>
-  </div>
-</section>
-<section class="quote-wrapper">
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-top.png" alt="Top-Image">
-  </div>
-  <div class="quote-container">
-    <div class="page-container">
-      <div class="quote--bg-image">
-        <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
-
-        <div class="quote--content">
-          <h2>Get Your Free Quotes Today</h2>
-          <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
-          <form action="/form.html" method="get">
-            <div class="zipcode-wrap">
-              <input type="text" name="zip" placeholder="Enter Zip code" id="">
-              <button type="submit" class="btn-rect">
-                Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
+      <form action="/form.html" method="get">
+        <div class="zipcode-wrap">
+          <input type="text" name="zip" placeholder="Enter Zip code" id="">
+          <button type="submit" class="btn-rect">
+            Free Cost Estimate<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                  fill="white"></path>
               </svg>
             </span>
           </button>
         </div>
       </form>
-          <div class="mobile-image">
-            <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+    </div>
+  </section>
+
+  <section class="second-need-wrapper">
+    <div class="page-container">
+      <div class="container-content-what">
+        <h2>What You Need To Know</h2>
+        <div class="container--content">
+          <div class="content--img--text">
+            <div class="content--img">
+              <img src="assets/images/What-yellowgirl.png" alt="Image Girl">
+            </div>
+
+            <div class="content--mobile">
+              <h2>What You Need To Know</h2>
+            </div>
+            <div class="content--text">
+              <p>There’s a way to save on your energy bills and help the environment with just one smart choice: getting
+                a solar panel installation service.&nbsp;</p>
+              <p>
+                If this is your first time exploring solar energy, we understand how the technicalities and sea of
+                options can quickly become overwhelming. This is what we at Solar Energy Host are for—we’re offering you
+                information and tools to help you make an informed choice.
+              </p>
+              <p>
+                Read on for more information about the benefits of solar energy, how to get one for your home, and how
+                you can conveniently find reliable solar panel installers in your area with the help of Solar Energy
+                Host.&nbsp;
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      
     </div>
-  </div>
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-btm.png" alt="Bottom-Image">
-  </div>
-</section>
-
-<section class="benefits">
-  <div class="page-container">
-   <div class="benefits-header-part">
-    <h2>What are the benefits of installing solar panels on my home?</h2>
-    <p>Deciding to install solar panels on your home is a step towards a brighter, more sustainable future. Here’s why choosing to get a solar panel installation service can be incredibly rewarding, both for your wallet and the planet:</p>
-  </div>
-  <div class="benefits-wrapper">
-   <div class="benefits-bill">
-    <div class="benefits-image">
-     <img src="assets/images/electricity-bill-img.png" alt="saving">
-   </div>
-   <div class="container-benefits">
-    <h3>
-      Save on electricity bills
-    </h3>
-    <p>Imagine lowering your monthly expenses without having to cut back on your use of gadgets or appliances. When
-      you get solar panels installed for your home, this is possible. By producing your own renewable energy, you’re less 
-      dependent on the power grid. The amount you save depends on the size of your solar panel installation and local
-      electricity rates, but the potential for savings can be significant.
-    </p>
-  </div>
-</div>
-<div class="benefits-bill">
-  
-  <div class="benefits-image">
-    <img src="assets/images/environmental-impact.png" alt="Environment img">
-  </div> 
-  <div class="container-benefits"> 
-    <h3>Make a positive environmental impact</h3>
-    <p>Choosing solar panels means opting for a clean energy source that doesn’t emit harmful greenhouse gasses. When you install solar panels, your household’s carbon footprint shrinks, contributing to global efforts for a healthier planet. This shift to green energy not only feels good but does good, too.</p>
-  </div>
-</div>
-<div class="benefits-bill">
-  <div class="benefits-image">
-    <img src="assets/images/home-value.png" alt="House in hand">
-  </div>
-  <div class="container-benefits">
-    <h3>Boost your home’s value</h3>
-    <p>Investing in solar panels not only benefits the environment but also your property’s market value. Homes equipped with a solar panel system can potentially sell for more than those without a home solar panel installation.
-    If you’re considering selling your home down the line, this could give you a competitive edge in the market.</p>
-    <p>A solar panel installation can offer financial and environmental advantages that extend beyond immediate savings. Solar installations represent a 
-    commitment to a sustainable lifestyle while potentially increasing your home’s value and contributing to a greener planet.</p>
-  </div>
-</div>
-<div class="benefits-bill">
-  
-  <div class="benefits-image">
-    <img src="assets/images/solar-energy-host.png" alt="Couple carring earth">
-  </div>
-  <div class="container-benefits">
-    <h3>Find the right solar provider fast with Solar Energy Host&nbsp;</h3>
-    
-    <p>At Solar Energy Host, we understand that entering the world of solar power installation for the first time can seem daunting. That’s why we offer you information to guide you through each step of the process, 
-    from gaining a basic understanding of solar energy to comparing quotes from various reliable solar power installer</p>
-    <p>Whether you’re just starting to consider solar energy or are ready to make the switch, we’re here to support you every step of the w</p>
-    <p>Our platform is tailored for individuals seeking dependable, in-depth information on solar energy solutions. We strive to be your one-stop destination for all things solar, ensuring you have access to up-to-date,
-    comprehensive data that aids in making well-informed decisio</p>
-    <p>Starting your solar journey with Solar Energy Host also means conveniently comparing multiple solar providers, finding the lowest prices, and getting serious savings from local providers. Comparing solar installers with Solar Energy Host is quick and easy,
-    leaving you with more time to focus on what matters: finding the best deal for your home</p>
-    
-  </div>
-  
-</div>
-</div>
-</div>
-</section>
-
-<section class="saving-wrapper">
-  <div class="page-container">
-    <div class="contain-start-over">
-      <div class="contain-wrapper">
-        <div class="contain-saving-header">
-          <div class="saving-header">
-           <h2>Start Saving Now!</h2>
-           <p>Join the millions of homeowners who have already made to switch to solar</p>
-         </div>
-        <form action="/form.html" method="get">
-          <div class="zipcode-wrap">
-            <input type="text" name="zip" placeholder="Enter Zip code" id="">
-            <button type="submit" class="btn-rect">
-              Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-            </svg>
-          </span>
-        </button>
-      </div>
-    </form>
-      </div>  
-      <div class="image-info">
-        <img src="assets/images/start-saving-now.png" alt="image of house and man">
-      </div>
+  </section>
+  <section class="quote-wrapper">
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-top.png" alt="Top-Image">
     </div>
-  </div>
-</div>
-</section>
-
-<section class="solar-pannel">
-  <div class="page-container">
-    <div class="solar-pannel-header">
-      <h2>How many solar panels are needed to power a house?</h2>
-      <p>Wondering how many solar panels you need to power up your house? It’s a great question, especially when you’re considering the solar installation cost. The answer is that it really depends on a few things about your home and what you want from your solar panels, such as: 
-      </p>
-    </div>
-    <div class="pannel-contain">
-      <div class="pannel-container1">
-        <div class="pannel-img">
-          <img src="assets/images/power-house-bg-green.png" alt="this is picture">
-        </div>
-        <div class="pannel-paragraph">
-          <p>How big your home is and how much energy you use. Bigger homes or homes that use a lot of electricity usually need more solar panels. 
-          </p>
-        </div>
-      </div>
-      <div class="pannel-container1">
-        <div class="pannel-img">
-          <img src="assets/images/power-house-bg-blue.png" alt="this is picture">
-        </div>
-        <div class="pannel-paragraph">
-          <p>Where you live. If your home gets a lot of sunshine, a solar panel installation company might not need to install as many solar panels as those who live in places that don’t get a lot of sun during the year.  
-          </p>
-        </div>
-      </div>
-      <div class="pannel-container1">
-        <div class="pannel-img">
-          <img src="assets/images/power-house-bg-purple.png" alt="this is picture">
-        </div>
-        <div class="pannel-paragraph">                  
-          <p>The type of solar panels. Some solar panels can be powerful, allowing them to make more electricity, even if you have less space on your roof. This could mean that you only need a few solar panels to complete the solar panel installation process. 
-          </p>
-        </div>
-      </div>
-      <div class="last-pannel">
-        <p>Since there’s a lot to think about, it can be helpful to use a tool to help you figure out exactly what you need based on your home, your location, and your energy goals. This way, you can hire the right solar installer for your needs. </p>
-      </div>
-    </section>
-
-    <section class="maintainance-wrapper">
+    <div class="quote-container">
       <div class="page-container">
-        <div class="maintainance-for-mobile">
-          <img src="assets/images/maintinance-blue-bag.png" alt="Bag">
-          <h2>Do solar panels need maintenance?</h2>
+        <div class="quote--bg-image">
+          <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
+
+          <div class="quote--content">
+            <h2>Get Your Free Quotes Today</h2>
+            <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use
+              form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+            <div class="mobile-image">
+              <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+            </div>
+          </div>
         </div>
-        <div class="maintainance-header">
-         <h2>Do solar panels need maintenance?</h2>
-       </div>
-       <div class="maintainance-container">
+
+      </div>
+    </div>
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-btm.png" alt="Bottom-Image">
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="page-container">
+      <div class="benefits-header-part">
+        <h2>What are the benefits of installing solar panels on my home?</h2>
+        <p>Deciding to install solar panels on your home is a step towards a brighter, more sustainable future. Here’s
+          why choosing to get a solar panel installation service can be incredibly rewarding, both for your wallet and
+          the planet:</p>
+      </div>
+      <div class="benefits-wrapper">
+        <div class="benefits-bill">
+          <div class="benefits-image">
+            <img src="assets/images/electricity-bill-img.png" alt="saving">
+          </div>
+          <div class="container-benefits">
+            <h3>
+              Save on electricity bills
+            </h3>
+            <p>Imagine lowering your monthly expenses without having to cut back on your use of gadgets or appliances.
+              When
+              you get solar panels installed for your home, this is possible. By producing your own renewable energy,
+              you’re less
+              dependent on the power grid. The amount you save depends on the size of your solar panel installation and
+              local
+              electricity rates, but the potential for savings can be significant.
+            </p>
+          </div>
+        </div>
+        <div class="benefits-bill">
+
+          <div class="benefits-image">
+            <img src="assets/images/environmental-impact.png" alt="Environment img">
+          </div>
+          <div class="container-benefits">
+            <h3>Make a positive environmental impact</h3>
+            <p>Choosing solar panels means opting for a clean energy source that doesn’t emit harmful greenhouse gasses.
+              When you install solar panels, your household’s carbon footprint shrinks, contributing to global efforts
+              for a healthier planet. This shift to green energy not only feels good but does good, too.</p>
+          </div>
+        </div>
+        <div class="benefits-bill">
+          <div class="benefits-image">
+            <img src="assets/images/home-value.png" alt="House in hand">
+          </div>
+          <div class="container-benefits">
+            <h3>Boost your home’s value</h3>
+            <p>Investing in solar panels not only benefits the environment but also your property’s market value. Homes
+              equipped with a solar panel system can potentially sell for more than those without a home solar panel
+              installation.
+              If you’re considering selling your home down the line, this could give you a competitive edge in the
+              market.</p>
+            <p>A solar panel installation can offer financial and environmental advantages that extend beyond immediate
+              savings. Solar installations represent a
+              commitment to a sustainable lifestyle while potentially increasing your home’s value and contributing to a
+              greener planet.</p>
+          </div>
+        </div>
+        <div class="benefits-bill">
+
+          <div class="benefits-image">
+            <img src="assets/images/solar-energy-host.png" alt="Couple carring earth">
+          </div>
+          <div class="container-benefits">
+            <h3>Find the right solar provider fast with Solar Energy Host&nbsp;</h3>
+
+            <p>At Solar Energy Host, we understand that entering the world of solar power installation for the first
+              time can seem daunting. That’s why we offer you information to guide you through each step of the process,
+              from gaining a basic understanding of solar energy to comparing quotes from various reliable solar power
+              installer</p>
+            <p>Whether you’re just starting to consider solar energy or are ready to make the switch, we’re here to
+              support you every step of the w</p>
+            <p>Our platform is tailored for individuals seeking dependable, in-depth information on solar energy
+              solutions. We strive to be your one-stop destination for all things solar, ensuring you have access to
+              up-to-date,
+              comprehensive data that aids in making well-informed decisio</p>
+            <p>Starting your solar journey with Solar Energy Host also means conveniently comparing multiple solar
+              providers, finding the lowest prices, and getting serious savings from local providers. Comparing solar
+              installers with Solar Energy Host is quick and easy,
+              leaving you with more time to focus on what matters: finding the best deal for your home</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="saving-wrapper">
+    <div class="page-container">
+      <div class="contain-start-over">
+        <div class="contain-wrapper">
+          <div class="contain-saving-header">
+            <div class="saving-header">
+              <h2>Start Saving Now!</h2>
+              <p>Join the millions of homeowners who have already made to switch to solar</p>
+            </div>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get started<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="image-info">
+            <img src="assets/images/start-saving-now.png" alt="image of house and man">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="solar-pannel">
+    <div class="page-container">
+      <div class="solar-pannel-header">
+        <h2>How many solar panels are needed to power a house?</h2>
+        <p>Wondering how many solar panels you need to power up your house? It’s a great question, especially when
+          you’re considering the solar installation cost. The answer is that it really depends on a few things about
+          your home and what you want from your solar panels, such as:
+        </p>
+      </div>
+      <div class="pannel-contain">
+        <div class="pannel-container1">
+          <div class="pannel-img">
+            <img src="assets/images/power-house-bg-green.png" alt="this is picture">
+          </div>
+          <div class="pannel-paragraph">
+            <p>How big your home is and how much energy you use. Bigger homes or homes that use a lot of electricity
+              usually need more solar panels.
+            </p>
+          </div>
+        </div>
+        <div class="pannel-container1">
+          <div class="pannel-img">
+            <img src="assets/images/power-house-bg-blue.png" alt="this is picture">
+          </div>
+          <div class="pannel-paragraph">
+            <p>Where you live. If your home gets a lot of sunshine, a solar panel installation company might not need to
+              install as many solar panels as those who live in places that don’t get a lot of sun during the year.
+            </p>
+          </div>
+        </div>
+        <div class="pannel-container1">
+          <div class="pannel-img">
+            <img src="assets/images/power-house-bg-purple.png" alt="this is picture">
+          </div>
+          <div class="pannel-paragraph">
+            <p>The type of solar panels. Some solar panels can be powerful, allowing them to make more electricity, even
+              if you have less space on your roof. This could mean that you only need a few solar panels to complete the
+              solar panel installation process.
+            </p>
+          </div>
+        </div>
+        <div class="last-pannel">
+          <p>Since there’s a lot to think about, it can be helpful to use a tool to help you figure out exactly what you
+            need based on your home, your location, and your energy goals. This way, you can hire the right solar
+            installer for your needs. </p>
+        </div>
+  </section>
+
+  <section class="maintainance-wrapper">
+    <div class="page-container">
+      <div class="maintainance-for-mobile">
+        <img src="assets/images/maintinance-blue-bag.png" alt="Bag">
+        <h2>Do solar panels need maintenance?</h2>
+      </div>
+      <div class="maintainance-header">
+        <h2>Do solar panels need maintenance?</h2>
+      </div>
+      <div class="maintainance-container">
         <div class="maintainance-img">
           <img src="assets/images/maintinance-blue-bag.png" alt="this is a bag">
         </div>
         <div class="maintainance-details">
-         <p>Yes, solar panels need some maintenance, but it’s typically minimal and easy to manage. Regular cleaning a few times a year—depending on the type of solar panel installation you have—helps keep them efficient by removing dust and debris. It’s also good to inspect them annually for any damage and monitor their energy output to ensure they’re performing well.</p>
-         <p>Proper care can extend their lifespan by a few more years. </p>
-       </div>
-     </div>
-   </div>
- </section>
+          <p>Yes, solar panels need some maintenance, but it’s typically minimal and easy to manage. Regular cleaning a
+            few times a year—depending on the type of solar panel installation you have—helps keep them efficient by
+            removing dust and debris. It’s also good to inspect them annually for any damage and monitor their energy
+            output to ensure they’re performing well.</p>
+          <p>Proper care can extend their lifespan by a few more years. </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <section class="solar-affects">
-  <div class="page-container">
-    <div class="solar-affects-header">
-      <h2>Does rain affect solar panels?</h2>
-    </div>
-    <div class="solar-affects-for-mobile">
-      <img src="assets/images/maintinance-umbrella.png" alt="this is an umbrella">
-      <h2>Does rain affect solar panels?</h2>
-    </div>
-    <div class="solar-affects-wrapper">
-      <div class="affects-img">
+  <section class="solar-affects">
+    <div class="page-container">
+      <div class="solar-affects-header">
+        <h2>Does rain affect solar panels?</h2>
+      </div>
+      <div class="solar-affects-for-mobile">
         <img src="assets/images/maintinance-umbrella.png" alt="this is an umbrella">
+        <h2>Does rain affect solar panels?</h2>
       </div>
-      <div class="solar-affects-container">
-       <p>Rain can be beneficial for some types of solar panels. It naturally cleans them, removing any dirt or debris that might have accumulated. Cooler temperatures during rain can also enhance the efficiency of certain solar panels. While heavy rain might temporarily reduce energy output, the impact is typically minimal, and some solar panels can quickly return to full productivity once the rain stops.</p>
-     </div>
-   </div>
- </div>
-</section>
-
-<section class="solar-energy-wrapper">
-  <div class="page-container">
-   <div class="content-info-work">
-    <h2>How it Works</h2>
-    <div class="container-boxes">
-      <div class="box">
-       <div class="num-wrapper">
-         <div class="num">
-           <span>1</span>
-         </div>
-         <div class="icon-wrap">
-          <img src="assets/images/icon-connect.png" alt="">      
-        </div>   
-       </div>
-       <div class="box-info">
-         <h3>Connect with top local providers</h3>
-         <p>Enter basic information to connect with solar providers in your area</p>
-       </div>
-     </div>
-     <div class="box">
-       <div class="num-wrapper">
-         <div class="num">
-           <span>2</span>
-         </div>
-         <div class="icon-wrap">
-          <img src="assets/images/icon-quotes.png" alt="">      
-        </div> 
-      </div>
-      <h3>Get competitive quotes delivered to you</h3>
-      <p>Enter basic information to connect with solar providers in your area</p>
-    </div>
-    <div class="box">
-     <div class="num-wrapper">
-       <div class="num">
-         <span>3</span>
-       </div>
-       <div class="icon-wrap">
-        <img src="assets/images/icon-saving.png" alt="">      
-      </div> 
-     </div>
-     <h3>Start saving with the 
-     best offer</h3>
-     <p>Enter basic information to connect with solar providers in your area</p>
-   </div>
- </div>
-</div>
-
-</div>
-</section>
-
-<section class="electricity-content-wrapper">
-  <div class="page-container">
-    <div class="container-content-electricity">
-      <h2>How long does it take for solar panels to start generating electricity?</h2>
-      <div class="container-content">
-        <p>
-          Rain can be beneficial for some types of solar panels. It naturally cleans them, removing any dirt or debris that might have accumulated. Cooler temperatures during rain can also enhance the efficiency of certain solar panels. While heavy rain might temporarily reduce energy output, the impact is typically minimal, and some solar panels can quickly return to full productivity once the rain stops.
-        </p>
-      </div>
-      
-      <div class="content--save">
-        <div class="content--save-img">
-          <img src="assets/images/Electricity-greenboy.png" alt="Boy in Green">
+      <div class="solar-affects-wrapper">
+        <div class="affects-img">
+          <img src="assets/images/maintinance-umbrella.png" alt="this is an umbrella">
         </div>
-        <div class="content--save-head">
-          <h3>See how much you can save now </h3>
-          <div class="content--save-body">
-            <p>Start saving money on your energy bills by finding a solar provider through Solar Energy Host! We’re here to empower you with the information and tools you need to confidently navigate through the solar panel installation options you have on the table. Our goal is to make your journey towards adopting solar power as simple and informed as possible.
-            </p>
-            <p>By simply sharing a bit of information about yourself, you’ll be connected with leading solar providers in your area. We’ll provide you with a selection of competitive quotes, making it easy for you to compare and find the ideal solar solution for your needs. Our streamlined process helps ensure you’re well on your way to enjoying significant savings with solar energy.</p>
-            <p>As we prioritize your security and satisfaction, Solar Energy Host uses high-level encryption to keep your details safe. We also help you find trusted solar providers so you have a better chance of hiring the right solar panel installation service instead of a random provider you might come across online. </p>
-            <p>Our service is designed to offer you competitive prices by presenting multiple quotes, allowing you to make an informed decision. Find out how much you can save with solar panels today!</p>
-          </div>
-          
+        <div class="solar-affects-container">
+          <p>Rain can be beneficial for some types of solar panels. It naturally cleans them, removing any dirt or
+            debris that might have accumulated. Cooler temperatures during rain can also enhance the efficiency of
+            certain solar panels. While heavy rain might temporarily reduce energy output, the impact is typically
+            minimal, and some solar panels can quickly return to full productivity once the rain stops.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="quote-wrapper">
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-top.png" alt="Top-Image">
-  </div>
-  <div class="quote-container">
+  </section>
+
+  <section class="solar-energy-wrapper">
     <div class="page-container">
-      <div class="quote--bg-image">
-        <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
-
-        <div class="quote--content">
-          <h2>Get Your Free Quotes Today</h2>
-          <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
-          <form action="/form.html" method="get">
-            <div class="zipcode-wrap">
-              <input type="text" name="zip" placeholder="Enter Zip code" id="">
-              <button type="submit" class="btn-rect">
-                Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z" fill="white"></path>
-              </svg>
-            </span>
-          </button>
-        </div>
-      </form>
-          <div class="mobile-image">
-            <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+      <div class="content-info-work">
+        <h2>How it Works</h2>
+        <div class="container-boxes">
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>1</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-connect.png" alt="">
+              </div>
+            </div>
+            <div class="box-info">
+              <h3>Connect with top local providers</h3>
+              <p>Enter basic information to connect with solar providers in your area</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>2</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-quotes.png" alt="">
+              </div>
+            </div>
+            <h3>Get competitive quotes delivered to you</h3>
+            <p>Enter basic information to connect with solar providers in your area</p>
+          </div>
+          <div class="box">
+            <div class="num-wrapper">
+              <div class="num">
+                <span>3</span>
+              </div>
+              <div class="icon-wrap">
+                <img src="assets/images/icon-saving.png" alt="">
+              </div>
+            </div>
+            <h3>Start saving with the
+              best offer</h3>
+            <p>Enter basic information to connect with solar providers in your area</p>
           </div>
         </div>
       </div>
-      
+
     </div>
-  </div>
-  <div class="quote--vector-image">
-    <img src="assets/images/vector-btm.png" alt="Bottom-Image">
-  </div>
-</section>
-<footer>
-  <div class="footer__navbar-wrapper">
+  </section>
+
+  <section class="electricity-content-wrapper">
     <div class="page-container">
-      <div class="navbar__logo-wrapper">
-        <a href="index.html" class="logo-white">
-          <img src="assets/images/logo-white.png" alt="Logo White"/>
-         </a>
+      <div class="container-content-electricity">
+        <h2>How long does it take for solar panels to start generating electricity?</h2>
+        <div class="container-content">
+          <p>
+            Rain can be beneficial for some types of solar panels. It naturally cleans them, removing any dirt or debris
+            that might have accumulated. Cooler temperatures during rain can also enhance the efficiency of certain
+            solar panels. While heavy rain might temporarily reduce energy output, the impact is typically minimal, and
+            some solar panels can quickly return to full productivity once the rain stops.
+          </p>
+        </div>
+
+        <div class="content--save">
+          <div class="content--save-img">
+            <img src="assets/images/Electricity-greenboy.png" alt="Boy in Green">
+          </div>
+          <div class="content--save-head">
+            <h3>See how much you can save now </h3>
+            <div class="content--save-body">
+              <p>Start saving money on your energy bills by finding a solar provider through Solar Energy Host! We’re
+                here to empower you with the information and tools you need to confidently navigate through the solar
+                panel installation options you have on the table. Our goal is to make your journey towards adopting
+                solar power as simple and informed as possible.
+              </p>
+              <p>By simply sharing a bit of information about yourself, you’ll be connected with leading solar providers
+                in your area. We’ll provide you with a selection of competitive quotes, making it easy for you to
+                compare and find the ideal solar solution for your needs. Our streamlined process helps ensure you’re
+                well on your way to enjoying significant savings with solar energy.</p>
+              <p>As we prioritize your security and satisfaction, Solar Energy Host uses high-level encryption to keep
+                your details safe. We also help you find trusted solar providers so you have a better chance of hiring
+                the right solar panel installation service instead of a random provider you might come across online.
+              </p>
+              <p>Our service is designed to offer you competitive prices by presenting multiple quotes, allowing you to
+                make an informed decision. Find out how much you can save with solar panels today!</p>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="navbar__menu-wrapper">
-        <ul class="navbar__menu">
-          <li><a href="">Home Solar Batteries</a></li>
-          <li><a href="">Solar Panel Installation</a></li>
-          <li><a href="">How it works</a></li>
-          <li><a href="">Solar Guide</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="cpr-wrapper">Copyright © 2018 - 2023 Solarhost co.</div>
     </div>
-  </div>
-</footer>
+  </section>
+  <section class="quote-wrapper">
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-top.png" alt="Top-Image">
+    </div>
+    <div class="quote-container">
+      <div class="page-container">
+        <div class="quote--bg-image">
+          <img src="assets/images/quotes-bg-desktop.png" alt="Boy holding paper">
+
+          <div class="quote--content">
+            <h2>Get Your Free Quotes Today</h2>
+            <p>Ready to make the switch to solar? Simply fill put in your Zip Code and fill out our&nbsp;easy-to-use
+              form, and we'll provide you with a personalized quote tailored to your home's energy needs and budget.</p>
+            <form action="/form.html" method="get">
+              <div class="zipcode-wrap">
+                <input type="text" name="zip" placeholder="Enter Zip code" id="">
+                <button type="submit" class="btn-rect">
+                  Get a Free Quote<span class="arrow"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0V9Z"
+                        fill="white"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+            <div class="mobile-image">
+              <img src="assets/images/quote-bg-mobile.png" alt="Mobile image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="quote--vector-image">
+      <img src="assets/images/vector-btm.png" alt="Bottom-Image">
+    </div>
+  </section>
+  <footer>
+    <div class="footer__navbar-wrapper">
+      <div class="page-container">
+        <div class="navbar__logo-wrapper">
+          <a href="index.html" class="logo-white">
+            <img src="assets/images/logo-white.png" alt="Logo White" />
+          </a>
+        </div>
+        <div class="navbar__menu-wrapper">
+          <ul class="navbar__menu">
+            <li><a href="">Home Solar Batteries</a></li>
+            <li><a href="">Solar Panel Installation</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Solar Guide</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="cpr-wrapper">Copyright © 2018 - 2023 Solarhost co.</div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
