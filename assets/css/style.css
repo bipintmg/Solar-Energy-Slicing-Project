@@ -2731,7 +2731,11 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
     gap: 16px 40px;
     padding: 32px;
   }
-
+  .contact-form .contact-form__form .form-wrapper li{
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
   .contact-form .contact-form__form .form-wrapper :nth-child(1) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -2743,7 +2747,7 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
   }
-
+/* 
   .contact-form .contact-form__form .form-wrapper :nth-child(3) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -2754,18 +2758,18 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
-  }
+  } */
 
   .contact-form .contact-form__form .form-wrapper :nth-child(4) textarea {
     height: 136px;
   }
 
-  .contact-form .contact-form__form .form-wrapper :nth-child(5) {
+  /* .contact-form .contact-form__form .form-wrapper :nth-child(5) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
     padding-top: 8px;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -2818,7 +2822,6 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
   height: 136px;
   resize: none;
 }
-
 .contact-form .contact-form__form .form-wrapper .form__form-label input::-webkit-input-placeholder,
 .contact-form .contact-form__form .form-wrapper .form__form-label textarea::-webkit-input-placeholder {
   color: #381606;
@@ -2851,7 +2854,16 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
 .contact-form .contact-form__form .form-wrapper .form__form-label textarea {
   border-radius: 16px;
 }
-
+.contact-form .contact-form__form .form-wrapper select{
+  padding: 8px 16px;
+  border: none;
+  font-family: 'Georama';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  border-radius: 32px;
+}
 .contact-form .contact-form__form .form-wrapper .form__form-label textarea:focus {
   outline: none;
 }
@@ -3003,7 +3015,6 @@ footer .footer__navbar-wrapper .page-container .cpr-wrapper {
     right: 15%;
   }
 }
-
 /*-------------Zipcode----------------*/
 .zipcode-wrapper {
   margin-top: 80px;
